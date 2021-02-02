@@ -1,5 +1,3 @@
-// The Firebase Admin SDK to access Firestore.
-admin.initializeApp();
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
