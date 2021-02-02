@@ -16,7 +16,7 @@ const jwt = require('jwt-simple');
 const apiRouter = require('./routes');
 
 const app = express();
-const PORT = process.env.PORT || 9000;
+const PORT = process.env.PORT || 19226;
 
 if (process.env.NODE_ENV !== 'production') {
   const morgan = require('morgan');
@@ -74,7 +74,7 @@ app.use((err, req, res, next) => {
   });
 });
 
-const expressServer = app.listen(process.env.PORT || PORT, () => {
+const expressServer = app.listen(PORT, () => {
   console.log(`Backend listening on port ${PORT}`);
 });
 
