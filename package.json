@@ -14,7 +14,6 @@
     "start": "node index.js",
     "postinstall": "npm rebuild node-sass && npm install --unsafe-perm -f node-sass",
     "heroku-postbuild": "cd client && npm install && npm run build"
-
   },
   "keywords": [],
   "dependencies": {
@@ -32,6 +31,7 @@
     "linkifyjs": "^2.1.9",
     "mongoose": "^5.9.23",
     "multer": "^1.4.2",
+    "node-sass": "^5.0.0",
     "nodemailer": "^6.4.6",
     "nodemon": "^2.0.4",
     "socket.io": "^2.3.0",
