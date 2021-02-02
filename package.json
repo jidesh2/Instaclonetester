@@ -12,7 +12,6 @@
     "server": "nodemon index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "start": "node index.js",
-    "build": "webpack",
     "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "keywords": [],
