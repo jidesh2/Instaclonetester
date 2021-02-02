@@ -31,6 +31,7 @@ app.use(bodyParser.json());
 app.set('trust proxy', 1);
 app.use('/api', apiRouter);
 
+
 if (process.env.NODE_ENV === 'production') {
   app.use(compression());
   app.use(express.static(path.join(__dirname, 'client/build')));
@@ -73,7 +74,7 @@ app.use((err, req, res, next) => {
   });
 });
 
-const expressServer = app.listen(PORT, () => {
+const expressServer = app.listen(process.env.PORT || PORT, () => {
   console.log(`Backend listening on port ${PORT}`);
 });
 
