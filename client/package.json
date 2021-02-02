@@ -8,7 +8,7 @@
   },
   "proxy": {
     "/api": {
-      "target": "http://localhost:19226",
+      "target": "http://localhost:9000",
       "secure": false
     }
   },
