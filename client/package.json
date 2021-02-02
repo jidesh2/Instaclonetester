@@ -6,12 +6,6 @@
     "node": "12.14.1",
     "npm": "6.13.7"
   },
-  "proxy": {
-    "/api": {
-      "target": "http://localhost:9000",
-      "secure": false
-    }
-  },
   "proxy": "http://localhost:9000",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
