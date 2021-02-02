@@ -40,6 +40,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+     "postinstall": "npm rebuild node-sass && npm install --unsafe-perm -f node-sass",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

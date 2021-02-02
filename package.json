@@ -12,7 +12,6 @@
     "server": "nodemon index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "start": "node index.js",
-    "postinstall": "npm rebuild node-sass && npm install --unsafe-perm -f node-sass",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "keywords": [],
