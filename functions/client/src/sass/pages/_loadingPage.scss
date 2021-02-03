@@ -1,8 +1,0 @@
-.loading-page {
-  @include absoluteCenter;
-
-  & > svg {
-    height: 5rem;
-    fill: $color-grey-1;
-  }
-}
